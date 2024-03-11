@@ -5,130 +5,69 @@
     <title>Kelaz terbuka</title>
   </head>
   <body>
-    <h1>Tag Table</h1>
+    <h1>Tag Form</h1>
     <hr />
 
-    <label>Table standart</label>
-    <table border="1">
-      <!-- tr untuk table row -->
-      <tr>
-        <!-- td untuk table data -->
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>5</td>
-        <td>6</td>
-      </tr>
-    </table>
-    <br />
+    <form action="">
+      <label for="nama">Nama :</label>
+      <input
+        type="text"
+        name="nama"
+        id="nama"
+        placeholder="Masukkan Nama Anda"
+        required
+        autocomplete="off"
+      />
+      <!-- attribute required berguna supaya form input tidak boleh kosong -->
+      <!-- attribute autocomplete = off artinya data yang sudah di isi tidak akan di simpan secara local oleh website -->
+      <br />
+      <label for="password">password</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Masukkan Password Anda"
+        required
+        autocomplete="off"
+      />
+      <br />
 
-    <label for="">Table dengan head</label>
-    <table border="1">
-      <!-- tr untuk table row -->
-      <tr>
-        <!-- th untuk table head (font menjadi bold)-->
-        <th>No.</th>
-        <th>Nama</th>
-        <th>Kelas</th>
-        <th>Jurusan</th>
-      </tr>
-      <tr>
-        <!-- td untuk table data -->
-        <th>1</th>
-        <td>Naufal</td>
-        <td>XII</td>
-        <td>RPL</td>
-      </tr>
-      <tr>
-        <!-- td untuk table data -->
-        <th>2</th>
-        <td>Abhi</td>
-        <td>XII</td>
-        <td>RPL</td>
-      </tr>
-    </table>
-    <br />
+      <!-- attribute name pada radio berguna agar tidak terjadi double choise saat pemilihan value(name harus diisikan sama) -->
+      <!-- attribute for pada label bertujuan agar saat kita klik label maka form akan ke pilih yang memiliki value sama antara attribute for dengan id -->
+      <label>Jenis kelamin :</label>
+      <input type="radio" name="gender" id="pria" required />
+      <label for="pria">pria</label>
+      <input type="radio" name="gender" id="wanita" required />
+      <label for="wanita">wanita</label>
+      <br />
 
-    <label> Table Alokasi (Rowspan dan Colspan) </label>
-    <!-- attribute border digunakan untuk menebalkan border table -->
-    <!-- attribute cellpadding digunakan untuk memberi ruang pada masing2 cell data -->
-    <!-- attribute cellspacing digunakan untuk memberi jarak antar ruang data -->
-    <table border="1" cellpadding="4" cellspacing="4">
-      <tr>
-        <!-- attribute rowspan digunakan untuk menggabungkan 2 atau beberapa baris -->
-        <th rowspan="2"></th>
-        <!-- attribute Colspan digunakan untuk menggabungkan 2 atau beberapa kolom -->
-        <th colspan="6">Hari</th>
-      </tr>
-      <tr>
-        <th>Senin</th>
-        <th>Selasa</th>
-        <th>Rabu</th>
-        <th>Kamis</th>
-        <th>Jumat</th>
-        <th>Sabtu</th>
-      </tr>
-      <tr>
-        <th>07:00</th>
-        <td>MTK</td>
-        <td>PBO</td>
-        <td>PWEB</td>
-        <td>PENJAS</td>
-        <td>BD</td>
-        <td>HHPS</td>
-      </tr>
-      <tr>
-        <th>08:00</th>
-        <td>PBO</td>
-        <td>PWEB</td>
-        <td>BD</td>
-        <td>PENJAS</td>
-        <td>PABP</td>
-        <td>HHPS</td>
-      </tr>
-      <tr>
-        <th>09:00</th>
-        <td>PBO</td>
-        <td>PWEB</td>
-        <td>PBO</td>
-        <td>MTK</td>
-        <td>PABP</td>
-        <td>HHPS</td>
-      </tr>
-      <tr>
-        <th rowspan="2">10:00</th>
-        <td>PBO</td>
-        <td>BD</td>
-        <td>PBO</td>
-        <td>MTK</td>
-        <td>PABP</td>
-        <td rowspan="2">Pulang</td>
-      </tr>
-      <tr>
-        <td colspan="5">Istirahat</td>
-      </tr>
-      <tr>
-        <th>11:00</th>
-        <td>MTK</td>
-        <td>PBO</td>
-        <td>PWEB</td>
-        <td>PENJAS</td>
-        <td>BD</td>
-      </tr>
-      <tr>
-        <th rowspan="2">12:00</th>
-        <td>MTK</td>
-        <td>PBO</td>
-        <td>PWEB</td>
-        <td>PENJAS</td>
-        <td>BD</td>
-      </tr>
-      <tr>
-        <td colspan="5">Pulang Sekolah</td>
-      </tr>
-    </table>
+      <label for="tgl_lahir">Tanggal Lahir :</label>
+      <input type="date" name="tgl_lahir" id="tgl_lahir" required />
+      <br />
+
+      <label for="hobi">Hobi :</label>
+      <input type="checkbox" name="hobi" id="futsal" />
+      <label for="futsal">Futsal</label>
+      <input type="checkbox" name="hobi" id="basket" />
+      <label for="basket">Basket</label>
+      <input type="checkbox" name="hobi" id="bulutangkis" />
+      <label for="bulutangkis">Bulutangkis</label>
+      <br />
+
+      <label for="jurusan">Jurusan :</label>
+      <select name="jurusan" id="jurusan">
+        <option value="ka">Kimia Analisis</option>
+        <option value="tei">Teknik Elektronika Industri</option>
+        <option value="pbs">Pebangkan Syariah</option>
+        <option value="rpl">Rekayasa Perangkat Lunak</option>
+      </select>
+      <br />
+
+      <label for="foto">Upload Foto</label>
+      <input type="file" name="foto" id="foto" />
+      <br />
+
+      <button type="submit">submit</button>
+    </form>
   </body>
 </html>
