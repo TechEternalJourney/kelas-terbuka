@@ -5,18 +5,130 @@
     <title>Kelaz terbuka</title>
   </head>
   <body>
-    <h1>Html Attribute</h1>
+    <h1>Tag Table</h1>
     <hr />
 
-    <!-- attribute berada di dalam tag -->
-    <a href="https://github.com/TechEternalJourney/kelas-terbuka">GitHub</a>
-    <!-- Tag a di atas memiliki attribte href -->
+    <label>Table standart</label>
+    <table border="1">
+      <!-- tr untuk table row -->
+      <tr>
+        <!-- td untuk table data -->
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+    </table>
+    <br />
 
-    <p id="1" title="Lorem">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, culpa
-      error ab soluta deserunt est. Laborum perferendis facere eius, aperiam sed
-      provident illum laudantium doloribus vitae animi, fuga sunt dignissimos.
-    </p>
-    <!-- Tag p di atas memiliki attribute id dan tittle -->
+    <label for="">Table dengan head</label>
+    <table border="1">
+      <!-- tr untuk table row -->
+      <tr>
+        <!-- th untuk table head (font menjadi bold)-->
+        <th>No.</th>
+        <th>Nama</th>
+        <th>Kelas</th>
+        <th>Jurusan</th>
+      </tr>
+      <tr>
+        <!-- td untuk table data -->
+        <th>1</th>
+        <td>Naufal</td>
+        <td>XII</td>
+        <td>RPL</td>
+      </tr>
+      <tr>
+        <!-- td untuk table data -->
+        <th>2</th>
+        <td>Abhi</td>
+        <td>XII</td>
+        <td>RPL</td>
+      </tr>
+    </table>
+    <br />
+
+    <label> Table Alokasi (Rowspan dan Colspan) </label>
+    <!-- attribute border digunakan untuk menebalkan border table -->
+    <!-- attribute cellpadding digunakan untuk memberi ruang pada masing2 cell data -->
+    <!-- attribute cellspacing digunakan untuk memberi jarak antar ruang data -->
+    <table border="1" cellpadding="4" cellspacing="4">
+      <tr>
+        <!-- attribute rowspan digunakan untuk menggabungkan 2 atau beberapa baris -->
+        <th rowspan="2"></th>
+        <!-- attribute Colspan digunakan untuk menggabungkan 2 atau beberapa kolom -->
+        <th colspan="6">Hari</th>
+      </tr>
+      <tr>
+        <th>Senin</th>
+        <th>Selasa</th>
+        <th>Rabu</th>
+        <th>Kamis</th>
+        <th>Jumat</th>
+        <th>Sabtu</th>
+      </tr>
+      <tr>
+        <th>07:00</th>
+        <td>MTK</td>
+        <td>PBO</td>
+        <td>PWEB</td>
+        <td>PENJAS</td>
+        <td>BD</td>
+        <td>HHPS</td>
+      </tr>
+      <tr>
+        <th>08:00</th>
+        <td>PBO</td>
+        <td>PWEB</td>
+        <td>BD</td>
+        <td>PENJAS</td>
+        <td>PABP</td>
+        <td>HHPS</td>
+      </tr>
+      <tr>
+        <th>09:00</th>
+        <td>PBO</td>
+        <td>PWEB</td>
+        <td>PBO</td>
+        <td>MTK</td>
+        <td>PABP</td>
+        <td>HHPS</td>
+      </tr>
+      <tr>
+        <th rowspan="2">10:00</th>
+        <td>PBO</td>
+        <td>BD</td>
+        <td>PBO</td>
+        <td>MTK</td>
+        <td>PABP</td>
+        <td rowspan="2">Pulang</td>
+      </tr>
+      <tr>
+        <td colspan="5">Istirahat</td>
+      </tr>
+      <tr>
+        <th>11:00</th>
+        <td>MTK</td>
+        <td>PBO</td>
+        <td>PWEB</td>
+        <td>PENJAS</td>
+        <td>BD</td>
+      </tr>
+      <tr>
+        <th rowspan="2">12:00</th>
+        <td>MTK</td>
+        <td>PBO</td>
+        <td>PWEB</td>
+        <td>PENJAS</td>
+        <td>BD</td>
+      </tr>
+      <tr>
+        <td colspan="5">Pulang Sekolah</td>
+      </tr>
+    </table>
   </body>
 </html>
