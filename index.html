@@ -5,22 +5,11 @@
     <title>Kelaz terbuka</title>
   </head>
   <body>
-    <h1>Menampilkan Video</h1>
+    <h1>Menampilkan Suara file mp3</h1>
     <hr />
 
-    <video
-      src="Queen.mp4"
-      width="100%"
-      poster="queen.jfif"
-      autoplay
-      controls
-      preload="metadata"
-      loop
-    >
-      <p>Vidio membuat database</p>
-    </video>
-    <!-- none: Ini berarti browser tidak akan memuat video sampai pengguna memutarnya. Ini cocok untuk video yang besar atau jika Anda ingin menghindari pembebanan bandwidth sebelum pengguna memutarnya. -->
-    <!-- metadata: Ini berarti browser hanya akan memuat metadata video, seperti durasi, dimensi, dan informasi lainnya yang diperlukan untuk menampilkan video. Ini memungkinkan browser menampilkan informasi dasar tentang video tanpa memuat seluruh konten, sehingga dapat membantu meningkatkan kinerja dan efisiensi. -->
-    <!-- auto: Ini berarti browser akan memuat seluruh video (termasuk audio dan video) segera setelah halaman dimuat. Browser akan mencoba untuk memuat dan menyimpan sebanyak mungkin dari video dalam cache untuk memastikan pemutaran yang mulus saat pengguna memutarnya. Ini adalah pilihan yang paling umum digunakan jika Anda ingin memastikan video siap diputar tanpa penundaan saat pengguna memulai pemutaran. -->
+    <audio src="queen.mp3" controls autoplay preload="auto" loop>
+      <p>ini adalah contoh untuk file suara mp3</p>
+    </audio>
   </body>
 </html>
