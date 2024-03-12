@@ -1,64 +1,55 @@
 /* Universal Selector (*) */
 
 * {
-  font-family: arial;
+  font-family: tahoma;
 }
 
 /* Type Selector */
 
-h1 {
-  color: rgb(197, 133, 197);
-}
-
-h3 {
-  color: coral;
+h2 {
+  font-size: 25px;
 }
 
 /* Class Selector */
-/* artinya li yang memiliki class sarapan */
-li.sarapan {
-  color: darkgoldenrod;
+
+.artikel {
+  font-size: 20px;
 }
-/* artinya semua yang memiliki class hari */
-.hari {
-  color: darkslateblue;
+
+.credit {
+  font-size: 10px;
+}
+
+.penulis {
+  color: yellowgreen;
+}
+
+.tanggal {
+  color: darkorange;
 }
 
 /* Id Selector */
-/* artinya li yang memiliki id makan-siang */
-li#makan-siang {
-  color: yellowgreen;
-}
-/* artinya semua yang memili id hari */
-#hari {
-  color: steelblue;
+
+#artikel-1 {
+  color: darkcyan;
 }
 
-/* CHild Selector */
-/* artinya tag b yang berada didalam tag p */
-p > b {
-  color: blue;
-}
+/* Child Selector */
 
-li > b {
-  color: crimson;
-}
-
-/* decendant Selector */
-/* artinya semua tag b yang berada didalam tag p */
-p b {
-  color: indianred;
+p > span {
+  color: tomato;
 }
 
 /* Adjacent Sibiling Selector */
-/* artinya semua tag h4 setelah tag p */
-p + h4 {
-  color: deeppink;
+
+h4 + p {
+  color: grey;
+  font-size: 20px;
 }
 
 /* General Sibiling Selector */
-/* artinya semua komponen tag p setelah tag h4 */
-h4 ~ p {
-  background-color: crimson;
-  font-family: 'Times New Roman';
+
+h1 ~ p {
+  background-color: antiquewhite;
+  text-align: justify;
 }
