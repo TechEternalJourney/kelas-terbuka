@@ -1,73 +1,15 @@
-/* Universal Selector */
-* {
-  font-family: arial;
+body {
+  font-family: aria;
+  color: darkslategray;
+  padding: 10px;
 }
 
-/* Aturan Teakhir */
-i {
-  color: red;
+.container {
+  border: 3px solid #d88b3d;
+  background-color: rgb(245, 171, 145);
+  padding: inherit;
+  /* Inheritance adalah pewarisan suatu properti sytle dari induknya(parent) ke anaknya(child) */
 }
-
-i {
-  color: green; /* Ini yang di ambil */
-}
-
-/* Specific */
-
-b {
-  color: goldenrod; /* Level 1 */
-}
-
-p b {
-  color: cornflowerblue !important; /* Level 3 */
-  /* arti dari important dia yang paling specifik */
-  /* NOTE : Hindari Penggunaan Important */
-}
-
-/* semua tag b yang berada di dalam tag p */
-p b {
-  color: deeppink; /* Level 2 */
-  font-size: 50%;
-}
-
-/* Studi kasus 1 */
-/* menargetkan semua tag b yang berada di dalam tag p */
-p b {
-  font-size: 50%; /* Lebih Spesifik */
-}
-
-/* menargetkan hanya tag b yang berada di dalam tag p */
-p > b {
-  font-size: 150%;
-}
-
-/* Studi Kasus 2 */
-/* menargetkan semua tag p */
-p {
-  font-size: 70%;
-}
-
-/* menargetkan hanya tag p yang hanya memiliki id pendahuluan */
-p#pendahuluan {
-  font-size: 150%; /* Lebih Specifik */
-}
-
-/* Studi kasus 3 */
-/* menargetkan hanya tag p yang hanya memiliki class kentang */
-p.kentang {
-  color: blueviolet; /* Lebih Spesifik */
-}
-
-/* menargetkan semua tag yang hanya memiliki class kentang */
 .kentang {
-  color: greenyellow;
-}
-
-/* Studi Kasus 4 */
-#kentang-id {
-  color: goldenrod; /* Lebih Spesifik dibandingkan class*/
-}
-
-.kentang {
-  color: blue;
+  border: inherit;
 }
