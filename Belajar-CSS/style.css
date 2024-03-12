@@ -1,55 +1,73 @@
-/* Universal Selector (*) */
-
+/* Universal Selector */
 * {
-  font-family: tahoma;
+  font-family: arial;
 }
 
-/* Type Selector */
-
-h2 {
-  font-size: 25px;
+/* Aturan Teakhir */
+i {
+  color: red;
 }
 
-/* Class Selector */
-
-.artikel {
-  font-size: 20px;
+i {
+  color: green; /* Ini yang di ambil */
 }
 
-.credit {
-  font-size: 10px;
+/* Specific */
+
+b {
+  color: goldenrod; /* Level 1 */
 }
 
-.penulis {
-  color: yellowgreen;
+p b {
+  color: cornflowerblue !important; /* Level 3 */
+  /* arti dari important dia yang paling specifik */
+  /* NOTE : Hindari Penggunaan Important */
 }
 
-.tanggal {
-  color: darkorange;
+/* semua tag b yang berada di dalam tag p */
+p b {
+  color: deeppink; /* Level 2 */
+  font-size: 50%;
 }
 
-/* Id Selector */
-
-#artikel-1 {
-  color: darkcyan;
+/* Studi kasus 1 */
+/* menargetkan semua tag b yang berada di dalam tag p */
+p b {
+  font-size: 50%; /* Lebih Spesifik */
 }
 
-/* Child Selector */
-
-p > span {
-  color: tomato;
+/* menargetkan hanya tag b yang berada di dalam tag p */
+p > b {
+  font-size: 150%;
 }
 
-/* Adjacent Sibiling Selector */
-
-h4 + p {
-  color: grey;
-  font-size: 20px;
+/* Studi Kasus 2 */
+/* menargetkan semua tag p */
+p {
+  font-size: 70%;
 }
 
-/* General Sibiling Selector */
+/* menargetkan hanya tag p yang hanya memiliki id pendahuluan */
+p#pendahuluan {
+  font-size: 150%; /* Lebih Specifik */
+}
 
-h1 ~ p {
-  background-color: antiquewhite;
-  text-align: justify;
+/* Studi kasus 3 */
+/* menargetkan hanya tag p yang hanya memiliki class kentang */
+p.kentang {
+  color: blueviolet; /* Lebih Spesifik */
+}
+
+/* menargetkan semua tag yang hanya memiliki class kentang */
+.kentang {
+  color: greenyellow;
+}
+
+/* Studi Kasus 4 */
+#kentang-id {
+  color: goldenrod; /* Lebih Spesifik dibandingkan class*/
+}
+
+.kentang {
+  color: blue;
 }
