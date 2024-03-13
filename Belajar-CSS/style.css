@@ -1,46 +1,24 @@
-/* cascade */
-* {
-  font-family: tahoma;
-}
-
-body {
-  background-color: rgb(211, 212, 230);
-}
-
 h2 {
-  font-family: "Times New Roman";
-  font-size: 30px;
-  background-color: rgba(0, 0, 0, 0.564);
-  color: floralwhite;
-  padding: 20px;
-  text-align: center;
+  font-family: "Georgia";
+  font-size: xx-large;
+  font-weight: normal;
 }
 
-h3 {
-  font-family: arial;
-  font-size: 25px;
-  padding: 10px;
-  text-align: start;
-  background-color: black;
-  color: floralwhite;
-}
-
-h4 {
-  font-family: Arial;
+.credit {
+  font-family: Verdana;
   font-size: 12px;
-  background-color: rgba(255, 99, 71, 0.169);
-  padding: 10px;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
 }
 
-h4 > span {
-  font-family: Arial;
-  color: rgb(255, 38, 0);
-  padding-left: inherit;
-  padding-right: inherit;
-  font-size: inherit;
+.tautan {
+  font-family: "Lucida Sans";
+  font-size: 80%;
+  text-decoration: none;
 }
 
-span {
-  color: rgb(0, 42, 255);
-  font-size: 15px;
+.intro {
+  font-family: "Segoe UI";
+  font-size: 1.5em; /* (em) Mengikut ukuran aslinya */
 }
