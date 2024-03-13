@@ -1,36 +1,46 @@
+/* cascade */
+* {
+  font-family: tahoma;
+}
+
 body {
-  background-color: #efefef;
-  color: #efefef;
+  background-color: rgb(211, 212, 230);
 }
 
-#artikel {
-  border: 1px solid #585454;
-  background-color: #878686;
-  padding: 20px;
-}
-
-h1 {
-  background-color: rgb(125, 27, 36);
-  padding: 10px;
-}
 h2 {
-  /* alpha (0 samapai 1) */
-  background-color: rgba(125, 27, 37, 0.61);
+  font-family: "Times New Roman";
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.564);
+  color: floralwhite;
+  padding: 20px;
+  text-align: center;
+}
+
+h3 {
+  font-family: arial;
+  font-size: 25px;
+  padding: 10px;
+  text-align: start;
+  background-color: black;
+  color: floralwhite;
+}
+
+h4 {
+  font-family: Arial;
+  font-size: 12px;
+  background-color: rgba(255, 99, 71, 0.169);
   padding: 10px;
 }
 
-.paragraf-1 {
-  padding: 10px;
-  background-color: hsl(255, 50%, 50%);
-  /* hsl (hue, saturation, lightness) */
-  /* hue (0 - 360 derajat) */
-  /* saturation (0% - 100%) */
-  /* lightness (0% - 100%) */
+h4 > span {
+  font-family: Arial;
+  color: rgb(255, 38, 0);
+  padding-left: inherit;
+  padding-right: inherit;
+  font-size: inherit;
 }
-.paragraf-2 {
-  padding: 20px;
-  border: 4px solid rgb(18, 18, 49);
-  /* alpha (0 samapai 1) */
-  background-color: hsla(340, 90%, 60%, 0.5);
-  color: hsl(hue, saturation, lightness);
+
+span {
+  color: rgb(0, 42, 255);
+  font-size: 15px;
 }
