@@ -1,37 +1,36 @@
-/* color */
+body {
+  background-color: #efefef;
+  color: #efefef;
+}
 
-/* foreground color */
-
-/* color name */
+#artikel {
+  border: 1px solid #585454;
+  background-color: #878686;
+  padding: 20px;
+}
 
 h1 {
-  color: darkcyan;
+  background-color: rgb(125, 27, 36);
+  padding: 10px;
 }
-
-/* Menggunakan Hex code dengan tanda (#) */
 h2 {
-  color: #4f4f4f;
+  /* alpha (0 samapai 1) */
+  background-color: rgba(125, 27, 37, 0.61);
+  padding: 10px;
 }
 
-/* Menggunakan RGB Value dengan kode rgb(red, green, blue) maksimal angka yang diisi 255 */
-p {
-  color: rgb(200, 50, 100);
+.paragraf-1 {
+  padding: 10px;
+  background-color: hsl(255, 50%, 50%);
+  /* hsl (hue, saturation, lightness) */
+  /* hue (0 - 360 derajat) */
+  /* saturation (0% - 100%) */
+  /* lightness (0% - 100%) */
 }
-
-/* Background color */
-/* Hex code */
-body{
-  background-color: #dfdfdf;
-}
-/* Color Name */
-h2{
-  background-color: darkgoldenrod;
-}
-/* RGB Value */
-h3{
-  background-color: rgb(100, 150, 100);
-}
-/* RGB Value */
-p{
-  background-color: rgb(186, 170, 244);
+.paragraf-2 {
+  padding: 20px;
+  border: 4px solid rgb(18, 18, 49);
+  /* alpha (0 samapai 1) */
+  background-color: hsla(340, 90%, 60%, 0.5);
+  color: hsl(hue, saturation, lightness);
 }
