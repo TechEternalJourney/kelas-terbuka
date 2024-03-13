@@ -1,15 +1,37 @@
-body {
-  font-family: aria;
-  color: darkslategray;
-  padding: 10px;
+/* color */
+
+/* foreground color */
+
+/* color name */
+
+h1 {
+  color: darkcyan;
 }
 
-.container {
-  border: 3px solid #d88b3d;
-  background-color: rgb(245, 171, 145);
-  padding: inherit;
-  /* Inheritance adalah pewarisan suatu properti sytle dari induknya(parent) ke anaknya(child) */
+/* Menggunakan Hex code dengan tanda (#) */
+h2 {
+  color: #4f4f4f;
 }
-.kentang {
-  border: inherit;
+
+/* Menggunakan RGB Value dengan kode rgb(red, green, blue) maksimal angka yang diisi 255 */
+p {
+  color: rgb(200, 50, 100);
+}
+
+/* Background color */
+/* Hex code */
+body{
+  background-color: #dfdfdf;
+}
+/* Color Name */
+h2{
+  background-color: darkgoldenrod;
+}
+/* RGB Value */
+h3{
+  background-color: rgb(100, 150, 100);
+}
+/* RGB Value */
+p{
+  background-color: rgb(186, 170, 244);
 }
