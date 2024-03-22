@@ -1,59 +1,24 @@
-.box-1 {
+* {
+  font-family: "Franklin Gothic Medium";
+}
+
+.container {
+  background-color: brown;
+  width: 160px;
   height: 100px;
-  width: 300px;
-  background-color: #f8810a;
-}
-.box-1 p {
-  height: 90%;
-  width: 95%;
-  background-color: rgb(53, 53, 202);
-}
-.box-2 {
-  height: 185px;
-  width: 400px;
-  background-color: #e1d41f;
-}
-.box-2 h2 {
-  height: 25%;
-  width: 25%;
-  background-color: rgb(53, 172, 202);
-}
-.box-2 p {
-  height: 50%;
-  width: 85%;
-  background-color: rgb(53, 172, 202);
+  border: 2px solid salmon;
 }
 
-/* Maximum dan Minimum pada BOX */
+.content {
+  font-size: 40px;
+  background-color: blanchedalmond;
+  text-align: center; /* mulai penulisan di tengah atau rata tengah */
 
-td {
-  background-color: cadetblue;
-}
-td.deskripsi {
-  background-color: chocolate;
-  min-width: 400px; /* Minimal ukuran lebar */
-  max-width: 700px; /* Maximal ukuran lebar */
-}
+  /* Ukuran Content lebar 100 x tinggi 40 */
+  width: 100px; /* lebar 100px */
+  height: 40px; /* tinggi 40px */
 
-h3,
-h4 {
-  font-family: "Times New Roman";
-  color: cadetblue;
+  padding: 10px; /* Jarak/ruang kosong antara content dengan border */
+  border: 10px solid black; /* tepi pada sebuah content */
+  margin: 10px; /* jarak antar content satu dengan yang lainnya */
 }
-
-.satu {
-  width: 200px;
-  height: 100px;
-  overflow: hidden; /* untuk mempotong sebuah kalimat yang berlebihan dan tidak ada scroll bar */
-}
-.dua {
-  width: 200px;
-  height: 100px;
-  overflow: scroll; /* untuk mempotong sebuah kalimat yang berlebihan dan memunculkan scroll bar */
-}
-.tiga {
-  width: 200px;
-  height: 100px;
-  overflow: auto; /* untuk mempotong sebuah kalimat yang berlebihan dan memunculkan scroll bar jika di perlukan scroll(automatis) */
-}
-
